@@ -11,6 +11,8 @@ position = Vector2(610, 90)
 collision_mask = 8
 slide_on_ceiling = false
 script = ExtResource("1_l1l7o")
+speed = null
+gravity = null
 
 [node name="Player" type="Sprite2D" parent="."]
 position = Vector2(0, -48)

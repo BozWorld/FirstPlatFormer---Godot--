@@ -418,4 +418,6 @@ layer_2/z_index = 0
 layer_2/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("2_t0c3j")]
-position = Vector2(131, 515)
+position = Vector2(131, 86)
+speed = Vector2(500, 900)
+gravity = 90
