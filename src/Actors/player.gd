@@ -34,11 +34,12 @@ func calculate_move_velocity(linear_velocity: Vector2,direction: Vector2, speed:
 		new_velocity.y = 0.0
 	return new_velocity
 
-
-
-
 func calculate_stomp_velocity(linear_velocity: Vector2, impulse: float) -> Vector2:
 	print("je suis arrivé la")
 	var out: = linear_velocity
 	out.y = -impulse
 	return out
+
+
+func _on_enemy_detector_body_entered(body):
+	queue_free()
