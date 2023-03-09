@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dg7ol1iksfvaa"]
+[gd_scene load_steps=9 format=3 uid="uid://dg7ol1iksfvaa"]
 
 [ext_resource type="Texture2D" uid="uid://dr5xg6y14l4kg" path="res://assets/background.png" id="1_6vo1u"]
 [ext_resource type="Texture2D" uid="uid://xjmayoeckbgy" path="res://assets/tileset.png" id="1_tiluj"]
 [ext_resource type="PackedScene" uid="uid://hp12fxb3s6xt" path="res://src/Actors/player.tscn" id="2_t0c3j"]
 [ext_resource type="PackedScene" uid="uid://1rysi22lhi85" path="res://src/Actors/Enemy.tscn" id="3_8w6mi"]
+[ext_resource type="PackedScene" uid="uid://dxhtwn76nm1xa" path="res://src/object/coin.tscn" id="5_e4bod"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_i4uv8"]
 tile_data = PackedInt32Array(0, 262144, 0, 65536, 262144, 1, 131072, 262144, 2, 196608, 262144, 3, 262144, 262144, 4, 1, 327680, 0, 65537, 327680, 1, 131073, 327680, 2, 196609, 327680, 3, 262145, 327680, 4, 2, 393216, 0, 65538, 393216, 1, 131074, 393216, 2, 196610, 393216, 3, 262146, 393216, 4, 3, 458752, 0, 65539, 458752, 1, 131075, 458752, 2, 196611, 458752, 3, 262147, 458752, 4)
@@ -442,5 +443,11 @@ limit_right = 1455
 
 [node name="Enemy" parent="." instance=ExtResource("3_8w6mi")]
 position = Vector2(964, 435)
+
+[node name="Coin" parent="." instance=ExtResource("5_e4bod")]
+position = Vector2(560, 450)
+
+[node name="Coin2" parent="." instance=ExtResource("5_e4bod")]
+position = Vector2(1081, 505)
 
 [editable path="Player"]

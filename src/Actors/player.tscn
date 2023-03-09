@@ -10,7 +10,6 @@ size = Vector2(80, 80)
 size = Vector2(90, 87)
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(610, 90)
 collision_mask = 8
 slide_on_ceiling = false
 script = ExtResource("1_l1l7o")
