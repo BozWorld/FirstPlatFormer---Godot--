@@ -1,0 +1,129 @@
+[gd_scene load_steps=8 format=3 uid="uid://df8bswcayc00y"]
+
+[ext_resource type="Script" path="res://src/object/Portal.gd" id="1_4dghf"]
+[ext_resource type="Texture2D" uid="uid://dieeket7u6dd3" path="res://assets/portal.png" id="1_o2ujb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dhs67"]
+radius = 82.0
+height = 212.0
+
+[sub_resource type="Animation" id="Animation_w58ni"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_jt8i0"]
+resource_name = "START"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_lw4xh"]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_twd6i"]
+_data = {
+"RESET": SubResource("Animation_w58ni"),
+"START": SubResource("Animation_jt8i0"),
+"fade_in": SubResource("Animation_lw4xh")
+}
+
+[node name="Portal" type="Area2D"]
+collision_layer = 0
+monitorable = false
+script = ExtResource("1_4dghf")
+
+[node name="PortalSprite" type="Sprite2D" parent="."]
+position = Vector2(0, -116)
+texture = ExtResource("1_o2ujb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -116)
+shape = SubResource("CapsuleShape2D_dhs67")
+
+[node name="TrahsitionLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="TrahsitionLayer"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../TrahsitionLayer/ColorRect")
+autoplay = "START"
+libraries = {
+"": SubResource("AnimationLibrary_twd6i")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

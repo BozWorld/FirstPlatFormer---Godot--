@@ -5,5 +5,5 @@ class_name Actor
 
 @export_category("character Movement")
 @export var speed = Vector2(600,1200)
-@export var gravity: = 4000
+var gravity: = 80
 var new_velocity: = Vector2.ZERO
