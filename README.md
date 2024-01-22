@@ -1,3 +1,8 @@
-# FirstPlatFormer-Unity-
+# FirstPlatFormer - godot -
 
-Jeu pour apprendre a réalieé un controlleur de base en 2d platformer sur Unity beaucoup de bonne base la dedans a creusé.
+Reproduction du tutoriel : https://www.youtube.com/watch?v=Mc13Z2gboEk En passant de Godot 3 à Godot 4.
+
+
+
+
+
