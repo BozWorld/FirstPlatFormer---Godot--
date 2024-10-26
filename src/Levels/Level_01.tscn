@@ -242,6 +242,7 @@ limit_right = 1455
 
 [node name="Enemy" parent="." instance=ExtResource("3_8w6mi")]
 position = Vector2(797, 539)
+script = null
 
 [node name="Coin" parent="." instance=ExtResource("5_e4bod")]
 position = Vector2(405, 538)
