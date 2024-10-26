@@ -3,18 +3,19 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dg3un2ut8y132"
-path="res://.godot/imported/montserrat_extrabold.otf-a5f3fe952b766712da299c69be7c0bf9.fontdata"
+path="res://.godot/imported/montserrat_extrabold.otf-9417420441dbdc94156720f51144a627.fontdata"
 
 [deps]
 
-source_file="res://assets/montserrat_extrabold.otf"
-dest_files=["res://.godot/imported/montserrat_extrabold.otf-a5f3fe952b766712da299c69be7c0bf9.fontdata"]
+source_file="res://assets/UI/montserrat_extrabold.otf"
+dest_files=["res://.godot/imported/montserrat_extrabold.otf-9417420441dbdc94156720f51144a627.fontdata"]
 
 [params]
 
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48

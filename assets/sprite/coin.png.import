@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crly5q4xeqjil"
-path="res://.godot/imported/adventurer_sprite_sheet_v1.1.png-200af6acf7164246e1e4f00c908b5052.ctex"
+uid="uid://xl3b3677tnq5"
+path="res://.godot/imported/coin.png-ed9404ca4ef11ac58beb4e15fc5d8a82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/adventurer_sprite_sheet_v1.1.png"
-dest_files=["res://.godot/imported/adventurer_sprite_sheet_v1.1.png-200af6acf7164246e1e4f00c908b5052.ctex"]
+source_file="res://assets/sprite/coin.png"
+dest_files=["res://.godot/imported/coin.png-ed9404ca4ef11ac58beb4e15fc5d8a82.ctex"]
 
 [params]
 

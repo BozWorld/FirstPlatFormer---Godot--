@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buyoleho6vm65"
-path="res://.godot/imported/9 - Mr._Circuit_Hurt (32 x 32).png-1f627bfa899ef0a6607746ed20f5af67.ctex"
+uid="uid://btjjsrxjna5qb"
+path="res://.godot/imported/9 - Mr._Circuit_Idle (32 x 32).png-e3476e19f5292b32af1838b9f34e149e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/9 - Mr._Circuit_Hurt (32 x 32).png"
-dest_files=["res://.godot/imported/9 - Mr._Circuit_Hurt (32 x 32).png-1f627bfa899ef0a6607746ed20f5af67.ctex"]
+source_file="res://assets/sprite/9 - Mr._Circuit_Idle (32 x 32).png"
+dest_files=["res://.godot/imported/9 - Mr._Circuit_Idle (32 x 32).png-e3476e19f5292b32af1838b9f34e149e.ctex"]
 
 [params]
 

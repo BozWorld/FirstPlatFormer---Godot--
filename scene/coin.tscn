@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dxhtwn76nm1xa"]
 
-[ext_resource type="Script" path="res://src/object/Coin.gd" id="1_l4gba"]
-[ext_resource type="Texture2D" uid="uid://xl3b3677tnq5" path="res://assets/coin.png" id="1_rds5t"]
+[ext_resource type="Script" path="res://script/interactable/Coin.gd" id="1_l4gba"]
+[ext_resource type="Texture2D" uid="uid://xl3b3677tnq5" path="res://assets/sprite/coin.png" id="1_rds5t"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wxqw7"]
 radius = 36.2215
@@ -100,9 +100,9 @@ debug_color = Color(0.556863, 0, 0.996078, 0.419608)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Coin")
-autoplay = "boucing"
 libraries = {
 "": SubResource("AnimationLibrary_dv4bx")
 }
+autoplay = "boucing"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://df8bswcayc00y"]
 
-[ext_resource type="Script" path="res://src/object/Portal.gd" id="1_4dghf"]
-[ext_resource type="Texture2D" uid="uid://dieeket7u6dd3" path="res://assets/portal.png" id="1_o2ujb"]
+[ext_resource type="Script" path="res://script/interactable/Portal.gd" id="1_4dghf"]
+[ext_resource type="Texture2D" uid="uid://dieeket7u6dd3" path="res://assets/sprite/portal.png" id="1_o2ujb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dhs67"]
 radius = 82.0
@@ -121,9 +121,9 @@ color = Color(0, 0, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../TrahsitionLayer/ColorRect")
-autoplay = "START"
 libraries = {
 "": SubResource("AnimationLibrary_twd6i")
 }
+autoplay = "START"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://hp12fxb3s6xt"]
 
-[ext_resource type="Script" path="res://src/Actors/player.gd" id="1_l1l7o"]
-[ext_resource type="Texture2D" uid="uid://bikxuu0lcr1ol" path="res://assets/player.png" id="2_528m5"]
+[ext_resource type="Script" path="res://script/player/player.gd" id="1_l1l7o"]
+[ext_resource type="Texture2D" uid="uid://bikxuu0lcr1ol" path="res://assets/sprite/player.png" id="2_528m5"]
 
 [sub_resource type="Animation" id="Animation_w58s4"]
 length = 0.001
